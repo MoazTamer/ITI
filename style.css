@@ -1,0 +1,481 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Con {
+    background-image: url("./images2/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.h-header {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.h-header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.h-header .menu {
+    /* display: flex; */
+    align-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.h-header .menu li {
+    margin: 0 15px;
+    display: inline;
+}
+
+.h-header .menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.login-btn {
+    background: #e91e63;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    /* border-radius: 5px; */
+}
+
+.hero {
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 16px;
+    color: #ccc;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+.signup-form {
+    margin-top: 30px;
+}
+
+.signup-form input {
+    padding: 10px;
+    width: 200px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    /* border-radius: 5px; */
+}
+
+.signup-form button {
+    background: #e91e63;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    /* border-radius: 5px; */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin: 40px auto;
+    width: 90%;
+}
+
+.header h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.header p {
+    color: #666;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.courses {
+    /* text-align: center; */
+    margin: 0 -10px;
+    overflow: hidden;
+}
+
+.course-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 30.33%;
+    min-width: 340px;
+    margin: 1%;
+    background: #f5f5f5;
+    cursor: pointer;
+}
+
+.course-item:hover {
+    background: #e91e63;
+}
+
+.course-item:hover .course-content h3,
+.course-item:hover .course-content p,
+.course-item:hover .course-count {
+    color: white;
+}
+
+.course-item img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    display: block;
+}
+
+.course-content {
+    padding: 20px;
+}
+
+.course-content h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.course-content p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.course-count {
+    font-weight: bold;
+    color: #e91e63;
+}
+
+.search-section {
+    background: #e91e63;
+    padding: 5% 0;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.search-section h2 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.search-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    margin: 0px 6vw;
+    padding: 24px;
+}
+
+.search-input {
+    width: 30%;
+    margin: 0 1%;
+    padding: 12px;
+    border: none;
+    vertical-align: middle;
+    outline: none;
+    background-color: #ccc;
+}
+
+.search-input:focus {
+    outline: none;
+    border-bottom: 2px solid #e91e63;
+}
+
+.search-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #e91e63;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.search-button:hover {
+    background: white;
+    color: #e91e63;
+}
+
+.featured-section {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.featured-section h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.featured-section p {
+    color: #666;
+    width: 100%;
+}
+
+.course-tabs {
+    margin-bottom: 30px;
+}
+
+.course-tabs a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    color: #666;
+    text-decoration: none;
+}
+
+.course-tabs a:hover {
+    color: #e91e63;
+}
+
+.course-grid {
+    text-align: center;
+    margin: 0 -10px;
+    overflow: hidden;
+}
+
+.course-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 22%;
+    min-width: 250px;
+    margin: 1%;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+}
+
+.course-card:hover {
+    margin-top: 0.5%;
+}
+
+.course-image {
+    position: relative;
+    height: 180px;
+}
+
+.course-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.price-tag {
+    background: #e91e63;
+    color: white;
+    padding: 3px 10px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.course-info {
+    padding: 12px;
+    text-align: left;
+}
+
+.course-title {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.course-desc {
+    color: #666;
+    font-size: 14px;
+}
+
+.student-count {
+    color: #e91e63;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.instructor {
+    display: flex;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.instructor img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+    border-radius: 45px;
+}
+
+.instructor-name {
+    /* display: inline-block; */
+    vertical-align: middle;
+    color: #666;
+}
+
+.instructor-role {
+    color: #e91e63;
+    /* display: block; */
+    /* margin-left: 50px; */
+}
+
+.signup-container {
+    display: flex;
+    margin: 40px 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.left-section {
+    /* float: left; */
+    width: 50%;
+    background-color: #e91e63;
+    color: white;
+    padding: 40px;
+}
+
+.left-section p,
+.left-section h1 {
+    color: white;
+    width: 100%;
+    align-items: center;
+    margin: 20px;
+}
+
+.right-section {
+    /* float: right; */
+    width: 50%;
+    /* height: 400px; */
+    background: url("./images2/signup-bg.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.form {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: white;
+}
+
+.form input {
+    width: 90%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid;
+    background: rgb(213, 211, 211);
+    color: white;
+    outline: none;
+}
+
+.form input:focus {
+    outline: none;
+    border-bottom: 2px solid #e91e63;
+}
+
+.upload-btn,
+.search-btn {
+    display: block;
+    padding: 15px;
+    margin: 10px 1px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.upload-btn {
+    background-color: rgb(104, 104, 104);
+}
+
+.search-btn {
+    background-color: #e91e63;
+}
+
+.upload-btn:hover,
+.search-btn:hover {
+    background: white;
+    color: #e91e63;
+}
+
+.f-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.f-register-btn {
+    background-color: #e91e63;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: white;
+    padding: 30px;
+    border-top: 2px solid #e91e63;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer div {
+    margin: 10px;
+}
+
+.footer h3 {
+    margin-bottom: 10px;
+}
+
+.newsletter input {
+    padding: 12px;
+    width: 150px;
+    border: none;
+    background-color: rgb(213, 211, 211);
+    margin-bottom: 10px;
+}
+
+.newsletter button {
+    background-color: #e91e63;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+}
+
+.footer {
+    color: #666;
+}
+
+.contact-info ul {
+    padding-left: 20px;
+}
+
+.contact-info ul li::marker {
+    color: #e91e63;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
